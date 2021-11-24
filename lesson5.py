@@ -3,9 +3,10 @@ persons = [['Иванов', 'Иван', 1991, 'холост'], ['Петров', 
 persons1 = {'Иванов' :{ 'fname': 'Иван', 'bday': '01.01.1991'}, 'Петров': { 'fname': 'Петр', 'bday': '02.02.1992'},
              'Сидоров':{ 'fname': 'Василий', 'bday': '03.03.1993'},'Попов':{'fname': 'Клим', 'bday': '04.04.1994'}}
 def old():
+    name = 'Имя'
     oldest = persons[0][2]
     for x in range(1, len(persons)):
-        if persons[x][2] < oldest:
+        if persons[x][2] > oldest:
             oldest = persons[x][2]
             name = persons[x][0]
 
