@@ -6,6 +6,7 @@ def was_asked(memory, q):
             return 1
     return 0
 
+
 def old_answer():
     global cheat_sheet
     rez, cheat_sheet = cheat_sheet, ''
