@@ -6,6 +6,6 @@ prompt = "Что вас интересует?"
 
 question = ""
 while question != "хватит":
-    print(prompt, end = ' ')
+    print(prompt, end=' ')
     answer = brain.think(input())
     print(answer)
